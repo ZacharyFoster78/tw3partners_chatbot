@@ -182,4 +182,24 @@ Mise en place via **GitHub Actions** :
 ---
 
 
+## 🧩 Axes d'amélioration
 
+Le projet peut évoluer sur plusieurs aspects techniques pour gagner en performance, en précision et en ergonomie :
+
+1. **Préchargement du LLM**  
+   Actuellement, le modèle est chargé à la volée, ce qui ralentit les premières réponses. Précharger le LLM au démarrage du backend permettrait de réduire drastiquement le temps de réponse initial.
+
+2. **Extraction approfondie du contenu web**  
+   Le système se limite aujourd’hui aux descriptions fournies par les moteurs de recherche. En accédant directement aux pages web et en extrayant les **3 premiers paragraphes**, le LLM pourrait générer des réponses bien plus précises et contextuelles.
+
+3. **Mise en place d’un système de cache**  
+   Ajouter un mécanisme de **caching intelligent** (basé sur les questions ou les mots-clés) permettrait :
+   - d'accélérer les réponses aux requêtes récurrentes,
+   - d'améliorer la continuité conversationnelle,
+   - de réduire les appels à SerpAPI.
+
+4. **Sauvegarde des conversations en base de données**  
+   Aujourd’hui, les feedbacks peuvent être sauvegardés localement, mais aucune base ne conserve l’historique complet. Ajouter une base de données permettrait :
+   - de reprendre des conversations,
+   - d’exploiter les logs pour du fine-tuning ou de l’analyse,
+   - de mieux personnaliser l’expérience utilisateur.
