@@ -46,7 +46,6 @@ Un chatbot intelligent capable d’interagir avec l’utilisateur, d’effectuer
 - Python 3.13
 - [Ollama](https://ollama.com/) (avec le modèle Qwen2.5)
 - Clé API [SerpAPI](https://serpapi.com/)
-- Uvicorn
 
 ### Frontend
 
@@ -99,10 +98,10 @@ Voici un aperçu des résultats :
 
 ## ☁️ Déploiement Azure
 
-## 📝 Remarques
+### 📝 Remarques
 
-> Le modèle Qwen2.5 est exécuté localement via Ollama. Pour des raisons de coût et de simplicité de déploiement, j'ai répondu aux questions comme si j'avais utilisé une API OpenRouter. Il est possible de deployer Ollama avec une image dockeriser.
-> Bien que l'IA ne soit pas autorisé pour répondre aux questions de la seconde partie, je l'ai utilisé pour le visuel.
+> - Le modèle Qwen2.5 est exécuté localement via Ollama. Pour des raisons de coût et de simplicité de déploiement, j'ai répondu aux questions comme si j'avais utilisé une API OpenRouter. Il est possible de deployer Ollama avec une image dockeriser.
+> - Bien que l'IA ne soit pas autorisé pour répondre aux questions de la seconde partie, je l'ai utilisé pour le visuel.
 
 ### Étapes de déploiement
 
